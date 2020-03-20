@@ -32,7 +32,7 @@ class HumanCellsChannel extends ApplicationChannel {
     final router = Router();
     //
     router
-      .route("/Cells/[:id]")
+      .route("/[:id]")
       .link(() => Cell_controller(context));
     //
     router
