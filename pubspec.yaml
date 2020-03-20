@@ -1,0 +1,16 @@
+name: human_cells
+description: Cells in a Human body.
+version: 0.0.1
+author: luis.vitor <luis.vitor@dcx.ufpb.br>
+
+environment:
+  sdk: "2.7.1"
+
+dependencies:
+  aqueduct: ^3.0.0
+  pedantic: ^1.8.0
+
+
+dev_dependencies:
+  test: ^1.0.0
+  aqueduct_test: ^1.0.0
