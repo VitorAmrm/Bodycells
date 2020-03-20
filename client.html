@@ -17,7 +17,7 @@
             spec: {"openapi":"3.0.0",
             "info":{"title":"Celulas,Bacterias e Virus","description":"Celulas Presentes No Corpo Humano.","version":"0.0.1"},
             "servers":[{"url":"https://humancells.herokuapp.com/"}],
-            "paths":{"/migrations":{"parameters":[],"get":{"tags":["Cell_controller"],"operationId":"getAllCells","parameters":[],"responses":{"200":{"description":"Successful response."}}},
+            "paths":{"/":{"parameters":[],"get":{"tags":["Cell_controller"],"operationId":"getAllCells","parameters":[],"responses":{"200":{"description":"Successful response."}}},
             "post":{"tags":["Cell_controller"],"operationId":"addCell","parameters":[],"requestBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/Cell"}}}},
             "responses":{"200":{"description":"Successful response."}}}},"/{id}":{"parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"string"}}],
             "get":{"tags":["Cell_controller"],"operationId":"getCellById","parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer"}}],
